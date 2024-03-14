@@ -7,11 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E29382D2BA288C900D5B398 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E29382C2BA288C900D5B398 /* main.cpp */; };
 		0EEF60822B9AAA7F003D9377 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EEF60812B9AAA7F003D9377 /* main.cpp */; };
 		0EEF60942BA1C969003D9377 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EEF60932BA1C969003D9377 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		0E2938282BA288C900D5B398 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		0EEF607C2B9AAA7F003D9377 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,6 +43,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E29382A2BA288C900D5B398 /* 14.longestCommonPrefix */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 14.longestCommonPrefix; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E29382C2BA288C900D5B398 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0EEF607E2B9AAA7F003D9377 /* leetcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = leetcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EEF60812B9AAA7F003D9377 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0EEF60912BA1C969003D9377 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +52,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0E2938272BA288C900D5B398 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0EEF607B2B9AAA7F003D9377 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,11 +76,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E29382B2BA288C900D5B398 /* 14.longestCommonPrefix */ = {
+			isa = PBXGroup;
+			children = (
+				0E29382C2BA288C900D5B398 /* main.cpp */,
+			);
+			path = 14.longestCommonPrefix;
+			sourceTree = "<group>";
+		};
 		0EEF60752B9AAA7F003D9377 = {
 			isa = PBXGroup;
 			children = (
-				0EEF60802B9AAA7F003D9377 /* 13.romanToInt */,
 				0EEF60922BA1C969003D9377 /* test */,
+				0EEF60802B9AAA7F003D9377 /* 13.romanToInt */,
+				0E29382B2BA288C900D5B398 /* 14.longestCommonPrefix */,
 				0EEF607F2B9AAA7F003D9377 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +99,7 @@
 			children = (
 				0EEF607E2B9AAA7F003D9377 /* leetcode */,
 				0EEF60912BA1C969003D9377 /* test */,
+				0E29382A2BA288C900D5B398 /* 14.longestCommonPrefix */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +123,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0E2938292BA288C900D5B398 /* 14.longestCommonPrefix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E2938302BA288C900D5B398 /* Build configuration list for PBXNativeTarget "14.longestCommonPrefix" */;
+			buildPhases = (
+				0E2938262BA288C900D5B398 /* Sources */,
+				0E2938272BA288C900D5B398 /* Frameworks */,
+				0E2938282BA288C900D5B398 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 14.longestCommonPrefix;
+			productName = 14.longestCommonPrefix;
+			productReference = 0E29382A2BA288C900D5B398 /* 14.longestCommonPrefix */;
+			productType = "com.apple.product-type.tool";
+		};
 		0EEF607D2B9AAA7F003D9377 /* leetcode */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EEF60852B9AAA7F003D9377 /* Build configuration list for PBXNativeTarget "leetcode" */;
@@ -135,8 +181,11 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
+					0E2938292BA288C900D5B398 = {
+						CreatedOnToolsVersion = 15.3;
+					};
 					0EEF607D2B9AAA7F003D9377 = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -160,11 +209,20 @@
 			targets = (
 				0EEF607D2B9AAA7F003D9377 /* leetcode */,
 				0EEF60902BA1C969003D9377 /* test */,
+				0E2938292BA288C900D5B398 /* 14.longestCommonPrefix */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0E2938262BA288C900D5B398 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E29382D2BA288C900D5B398 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0EEF607A2B9AAA7F003D9377 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -184,6 +242,30 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		0E29382E2BA288C900D5B398 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 746SC78588;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0E29382F2BA288C900D5B398 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 746SC78588;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		0EEF60832B9AAA7F003D9377 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -218,6 +300,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -279,6 +362,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -303,6 +387,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 746SC78588;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -313,6 +398,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 746SC78588;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -323,6 +409,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 746SC78588;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -333,6 +420,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 746SC78588;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -342,6 +430,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0E2938302BA288C900D5B398 /* Build configuration list for PBXNativeTarget "14.longestCommonPrefix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E29382E2BA288C900D5B398 /* Debug */,
+				0E29382F2BA288C900D5B398 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0EEF60792B9AAA7F003D9377 /* Build configuration list for PBXProject "leetcode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
