@@ -18,29 +18,24 @@ public:
             if(s[i] == '(' || s[i] == '[' || s[i] == '{') {
                 v.push_back(s[i]);
             }else {
-                if(i > 0) {
-                    if(s[i] == ')' || s[i] == ']' || s[i] == '}') {
-                        if(v.size() == 0) {
-                            return false;
-                        }
-                        if(v.back() == '(' && s[i] == ')') {
-                            v.pop_back();
-                            continue;
-                        }
-                        if(v.back() == '[' && s[i] == ']') {
-                            v.pop_back();
-                            continue;
-                        }
-                        if(v.back() == '{' && s[i] == '}') {
-                            v.pop_back();
-                            continue;
-                        }else {
-                            return false;
-                        }
+                if(s[i] == ')' || s[i] == ']' || s[i] == '}') {
+                    if(v.size() == 0) {
+                        return false;
                     }
-                }else {
-                    return false;
-                }
+                    if(v.back() == '(' && s[i] == ')') {
+                        v.pop_back();
+                        continue;
+                    }
+                    if(v.back() == '[' && s[i] == ']') {
+                        v.pop_back();
+                        continue;
+                    }
+                    if(v.back() == '{' && s[i] == '}') {
+                        v.pop_back();
+                        continue;
+                    }else {
+                        return false;
+                    }
             }
         }
         if(v.size() == 0) {
