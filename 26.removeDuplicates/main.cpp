@@ -32,5 +32,6 @@ int main() {
     vector<int> nums = {0,0,1,1,1,2,2,3,3,4};
     Solution s;
     int i = s.removeDuplicates(nums);
+    cout << i;
     return 0;
 }
