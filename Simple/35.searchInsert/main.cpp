@@ -38,7 +38,7 @@ public:
 };
 
 int main() {
-    vector<int> nums = {1};
+    vector<int> nums = {1,3,4,5,6,8,9,10,13,16};
     int i = 0;
     Solution s;
     cin >> i;

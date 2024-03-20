@@ -1,3 +1,11 @@
+//
+//  main.cpp
+//  58.lengthOfLastWord
+//
+//  Created by 李雪峰 on 2024/3/20.
+//
+
+#include <iostream>
 #include <iostream>
 #include <string>
 using namespace std;
@@ -5,23 +13,24 @@ using namespace std;
 class Solution {
 public:
     int lengthOfLastWord(string s) {
-        int blank = -1, n = 0;
-        while (n < s.size()) {
-            if (s[n] == ' ') {
-                blank = n;
-            }
+        int len = 0, n = (int)s.size() - 1;
+        while (s[n] == ' ') {
+            n--;
         }
-        if (blank == -1) {
-            return s.size();
+        while (n >= 0 && s[n] != ' ') {
+            len++;
+            n--;
         }
-        return n - blank;
+        return len;
     }
 };
 
 int main() {
     string s;
     Solution so;
-    cin >> s;
+    getline(cin, s);
     cout << so.lengthOfLastWord(s);
     return 0;
 }
+
+
