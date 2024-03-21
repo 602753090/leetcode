@@ -33,6 +33,7 @@
 
 # Others
 *.vs
+*.vscode
 
 # MacOS
 *.xcodeproj
