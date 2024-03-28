@@ -37,3 +37,4 @@
 
 # MacOS
 *.xcodeproj
+*.DS_Store
